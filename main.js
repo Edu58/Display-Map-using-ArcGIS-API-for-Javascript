@@ -5,7 +5,6 @@ require([
     'esri/config',
     'esri/Map',
     'esri/views/MapView',
-    'esri/widgets/BasemapToggle'
 ], function (esriConfig, Map, MapView, BasemapToggle) {
     esriConfig.apikey = API_KEY;
 
@@ -19,11 +18,4 @@ require([
         container: "Map",
       zoom: 10
     });
-
-    const baseMapToggle = new BasemapToggle({
-        view: view,
-        nextBasemap: "arcgis-streets-night"
-    });
-
-    view.ui.add(baseMapToggle, "bottom-right");
 })
