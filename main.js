@@ -5,7 +5,7 @@ require([
     'esri/config',
     'esri/Map',
     'esri/views/MapView',
-], function (esriConfig, Map, MapView, BasemapToggle) {
+], function (esriConfig, Map, MapView) {
     esriConfig.apikey = API_KEY;
 
     const map = new Map({
